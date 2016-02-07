@@ -1,0 +1,1 @@
+print("POS {0:20}  P   W   L   D  GF  GA  GD PTS\n".format("CLUB"),*[("{:>2s} {:20s} {:>2s}"+" {:>3s}"*7+"\n").format(*__import__("re").findall(r"[\d\-]+|(?=\w)[^\d\-]+(?![\d\-])", line))for line in __import__("sys").stdin])
