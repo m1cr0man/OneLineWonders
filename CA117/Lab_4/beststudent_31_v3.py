@@ -1,0 +1,1 @@
+(lambda a:print("Best student: {1} {2}\nBest mark: {0}".format(*max([line.split()for line in open(a,'r')],key=lambda x:int(x[0]) if x[0].isdigit() else [999,print("Invalid mark %s encountered. Skipping" % x[0])][0])))if __import__('os').path.isfile(a)else print("ERROR: File not found! " + a))(__import__('sys').argv[1])

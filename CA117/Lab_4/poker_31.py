@@ -1,0 +1,1 @@
+(lambda x:[print("The probability of {} is {:.4f}%".format(n,d[0]*100/len(x)))for n,d in enumerate([(x.count(str(n)),["nothing","one pair","two pairs","three of a kind","a straight","a flush","a full house","four of a kind","a straight flush","a royal flush"][n])for n in range(0, 10)])])([line[-2]for line in __import__('sys').stdin])
