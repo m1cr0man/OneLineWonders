@@ -1,0 +1,1 @@
+(lambda L:[print("{} : {:>3}".format(l,L.count(l)))for l in sorted(set("aeiou"),key=L.count,reverse=True)])([l.lower()for r in __import__('sys').stdin for w in r.split()for l in w if l.lower()in"aeiou"])

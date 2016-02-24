@@ -1,0 +1,1 @@
+(lambda a:[(lambda a,n:print("Phone: %s\nEmail: %s"%a[n]if n in a else "No such contact"))(a,n.strip())for n in __import__('sys').stdin])({n:(p,e)for l in open(__import__('sys').argv[1],'r')for n,p,e in[l.split()]})
