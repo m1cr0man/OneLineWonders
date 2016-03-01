@@ -1,0 +1,1 @@
+(lambda C,M,B:(lambda P:[print("Match {}'s : {:>5} ({} to 1)".format(n,P.count(n),"?"if P.count(n)==0else int(1000000/P.count(n))))for n in range(3,7)])([len(set(__import__("random").sample(B,6)).intersection(C))for _ in range(0,1000001)]))([int(x)for x in __import__("sys").argv[1:]],{x:0for x in range(3,7)},[x for x in range(1,48)])
