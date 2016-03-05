@@ -1,0 +1,1 @@
+(lambda R:(lambda R,r:print(r+" : "+R[r]))(R,min(R,key=lambda k:(lambda m,s:not(m+s).isdigit()and 999or int(m)*60+int(s))(*R[k].split(":")))))({R[0]:min(R[1:],key=lambda t:(lambda m,s:(m+s).isdigit()and int(m)*60+int(s))(*t.split(":")))for x in __import__("sys").stdin for R in[x.split()]})

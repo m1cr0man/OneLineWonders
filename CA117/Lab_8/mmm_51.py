@@ -1,0 +1,1 @@
+(lambda x:(lambda x,l:print("Mean: {:.1f}\nMode: {:.1f}\nMedian: {:.1f}".format(sum(x)/l,max(x,key=x.count),x[l//2]if l%2else(x[(l//2)-1]+x[l//2])/2)))(x,len(x)))(sorted([int(x)for x in __import__("sys").stdin]))

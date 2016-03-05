@@ -1,0 +1,1 @@
+_=[print("%s/%d/%s"%(d,["","January","February","March","April","May","June","July","August","September","October","November","December"].index(m), y[2:]))for r in __import__("sys").stdin for d,m,y in[r.split()]]
