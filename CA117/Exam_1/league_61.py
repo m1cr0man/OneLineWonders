@@ -1,0 +1,1 @@
+_=[print("%s: %d points"%T)for T in sorted([(T[0],sum([int(s)for s in T[1].split()]))for R in __import__("sys").stdin for T in[R.split(":")]if all(x.isdigit()for x in T[1].split())],key=lambda x:-x[1])]

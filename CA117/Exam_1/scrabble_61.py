@@ -1,0 +1,1 @@
+print("%s: %d"%max([(w,sum([[1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10][ord(c)-97]for c in w]))for R in __import__("sys").stdin for w in[R.strip()]if all([w.count(c)<=__import__("sys").argv[1].count(c)for c in set(w)])],key=lambda x:x[1]))
